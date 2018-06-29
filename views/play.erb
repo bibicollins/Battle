@@ -1,11 +1,11 @@
-<h1>Let the games begin <%= @player1 %> & <%= @player2 %></h1>
+<h1>Let the games begin <%= @game.player1.name %> & <%= @game.player2.name %></h1>
 
 
 <div align = "left">
-<%= @player1 %>: HP 100/100
+<%= @game.player1.name %>: HP 100/100
 </div>
 <div align = "right">
-<%= @player2 %>: HP 100/100
+<%= @game.player2.name %>: HP 100/100
 </div>
 
 <form action="attack" method="get">
