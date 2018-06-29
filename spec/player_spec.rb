@@ -12,7 +12,6 @@ let(:player) { Player.new(:name) }
     end
   end
   describe '#attack' do
-
     it 'injures the other player' do
       player.take_the_hit
       expect(player.hit_points).to eq(described_class::DEFAULT_HIT_POINTS - 10)
